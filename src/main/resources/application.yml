@@ -1,0 +1,31 @@
+server:
+  port: 1234
+  servlet:
+    context-path: /faq
+spring:
+  #mysql连接
+  datasource:
+    url: jdbc:mysql://localhost:3306/faqdb?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    throw-exception-if-no-handler-found: true
+  #redis连接
+  redis:
+    host: localhost
+    port: 6379
+    database: 6
+    jedis:
+      pool:
+        max-active: 50
+        min-idle: 20
+  #引入自定义配置，application-user.yml
+  profiles:
+    include:
+      - user
+
+#es连接
+elasticsearch:
+  host: localhost
+  port: 9200

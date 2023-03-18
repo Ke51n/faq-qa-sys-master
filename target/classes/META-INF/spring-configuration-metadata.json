@@ -1,0 +1,77 @@
+{
+  "groups": [
+    {
+      "name": "dialogue",
+      "type": "com.example.faq.config.DialogueConfig",
+      "sourceType": "com.example.faq.config.DialogueConfig"
+    },
+    {
+      "name": "dialogue.confidence-rank",
+      "type": "com.example.faq.config.DialogueConfig$ConfidenceRank",
+      "sourceType": "com.example.faq.config.DialogueConfig"
+    },
+    {
+      "name": "dialogue.hot-data",
+      "type": "com.example.faq.config.DialogueConfig$HotData",
+      "sourceType": "com.example.faq.config.DialogueConfig"
+    },
+    {
+      "name": "dialogue.multi-turn-qa",
+      "type": "com.example.faq.config.DialogueConfig$MultiRoundQa",
+      "sourceType": "com.example.faq.config.DialogueConfig"
+    },
+    {
+      "name": "dialogue.status",
+      "type": "com.example.faq.config.DialogueConfig$Status",
+      "sourceType": "com.example.faq.config.DialogueConfig"
+    },
+    {
+      "name": "elasticsearch",
+      "type": "com.example.faq.config.ElasticsearchConfig",
+      "sourceType": "com.example.faq.config.ElasticsearchConfig"
+    },
+    {
+      "name": "retrieval",
+      "type": "com.example.faq.config.RetrievalConfig",
+      "sourceType": "com.example.faq.config.RetrievalConfig"
+    },
+    {
+      "name": "retrieval.index",
+      "type": "com.example.faq.config.RetrievalConfig$Index",
+      "sourceType": "com.example.faq.config.RetrievalConfig"
+    },
+    {
+      "name": "retrieval.search",
+      "type": "com.example.faq.config.RetrievalConfig$Search",
+      "sourceType": "com.example.faq.config.RetrievalConfig"
+    },
+    {
+      "name": "similarity",
+      "type": "com.example.faq.config.SimilarityConfig",
+      "sourceType": "com.example.faq.config.SimilarityConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "elasticsearch.host",
+      "type": "java.lang.String",
+      "sourceType": "com.example.faq.config.ElasticsearchConfig"
+    },
+    {
+      "name": "elasticsearch.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.faq.config.ElasticsearchConfig"
+    },
+    {
+      "name": "retrieval.elasticsearch-a-p-i-path",
+      "type": "java.lang.String",
+      "sourceType": "com.example.faq.config.RetrievalConfig"
+    },
+    {
+      "name": "similarity.request-url",
+      "type": "java.lang.String",
+      "sourceType": "com.example.faq.config.SimilarityConfig"
+    }
+  ],
+  "hints": []
+}
